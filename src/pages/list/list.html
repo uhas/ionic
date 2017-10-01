@@ -9,14 +9,33 @@
 
 <ion-content>
   <ion-list>
-    <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">
-      <ion-icon [name]="item.icon" item-left></ion-icon>
-      {{item.title}}
-      <div class="item-note" item-right>
-        {{item.note}}
-      </div>
-    </button>
+    <ion-list-header>
+      A
+    </ion-list-header>
+  
+    <ion-item>Akshay</ion-item>
+    <ion-item>Amarendar</ion-item>
+    <ion-item>Aswini</ion-item>
   </ion-list>
+  
+  <ion-list>
+    <ion-list-header>
+      B
+    </ion-list-header>
+    <ion-item>Badami</ion-item>
+    <ion-item>Bhavishya</ion-item>
+    <ion-item>Bunty</ion-item>
+  </ion-list>
+  
+  <ion-list>
+    <ion-list-header>
+      C
+    </ion-list-header>
+    <ion-item>Chaitanya</ion-item>
+    <ion-item>Chandan</ion-item>
+    <ion-item>Charan</ion-item>
+  </ion-list>
+   
   <div *ngIf="selectedItem" padding>
     You navigated here from <b>{{selectedItem.title}}</b>
   </div>

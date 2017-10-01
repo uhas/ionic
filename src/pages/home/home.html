@@ -8,11 +8,82 @@
 </ion-header>
 
 <ion-content padding>
-  <h3>Ionic Menu Starter</h3>
-
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
-  </p>
-
-  <button ion-button secondary menuToggle>Toggle Menu</button>
-</ion-content>
+  
+    <div class="bar bar-subheader ">
+      <h1 class="title">Welcome to ionic</h1>
+    </div>
+    <div>
+      <h2 class="positive">Create incredible apps.</h2>
+      <h4>Ionic is the beautiful, open source mobile SDK for developing native and progressive web apps.</h4>
+    </div>
+    <div>
+      <h2 class="positive">Install ionic</h2>
+      <h4>Step One : Install Node.js and Cordova</h4>
+  
+      <h6><code>$ npm install -g cordova ionic </code></h6>
+  
+    </div>
+    <div>
+      <h4>Step Two : Start a project.</h4>
+  
+      <h6><code>$ ionic start myApp sidemenu </code></h6>
+  
+    </div>
+    <div>
+      <h4>Step Three : Run the project.</h4>
+  
+      <h6><code>$ ionic serve</code></h6>
+  
+    </div>
+  
+    <button ion-button secondary menuToggle>Toggle Menu</button>
+  
+    <ion-item>
+      <h1 *ngIf=myDate>{{myDate}}</h1>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label>Date</ion-label>
+      <ion-datetime displayFormat="MMM DD, YYYY" [(ngModel)]="myDate"></ion-datetime>
+    </ion-item>
+  
+    <ion-item>
+  
+    </ion-item>
+  
+    <ion-list radio-group>
+      <ion-list-header>
+        Choose a programming Language
+      </ion-list-header>
+  
+      <ion-item>
+        <ion-label>Java</ion-label>
+        <ion-radio checked="true" value="go"></ion-radio>
+      </ion-item>
+  
+      <ion-item>
+        <ion-label>Python</ion-label>
+        <ion-radio value="rust"></ion-radio>
+      </ion-item>
+  
+      <ion-item>
+        <ion-label>Swift</ion-label>
+        <ion-radio value="python"></ion-radio>
+      </ion-item>
+    </ion-list>
+  
+    <ion-item>
+      <ion-label>What do you want to be?</ion-label>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label>ios developeer</ion-label>
+      <ion-checkbox color="dark" checked="true"></ion-checkbox>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label>android developer</ion-label>
+      <ion-checkbox disabled="true"></ion-checkbox>
+    </ion-item>
+  </ion-content>
+  
